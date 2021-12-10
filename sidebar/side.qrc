@@ -1,0 +1,23 @@
+<RCC>
+  <qresource prefix="basis">
+    <file>sbasis.png</file>
+  </qresource>
+  <qresource prefix="background">
+    <file>sb.png</file>
+  </qresource>
+  <qresource prefix="buttonactive">
+    <file>F_2.png</file>
+    <file>H_2.png</file>
+    <file>R_2.png</file>
+  </qresource>
+  <qresource prefix="buttonhover">
+    <file>F_1.png</file>
+    <file>H_1.png</file>
+    <file>R_1.png</file>
+  </qresource>
+  <qresource prefix="buttoninactive">
+    <file>F_0.png</file>
+    <file>H_0.png</file>
+    <file>R_0.png</file>
+  </qresource>
+</RCC>

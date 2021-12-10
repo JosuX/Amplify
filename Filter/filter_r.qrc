@@ -1,0 +1,16 @@
+<RCC>
+  <qresource prefix="basis">
+    <file>filter_basis.png</file>
+  </qresource>
+  <qresource prefix="other">
+    <file>blue.png</file>
+    <file>green.png</file>
+    <file>pink.png</file>
+    <file>red.png</file>
+    <file>yel.png</file>
+    <file>dropdown.png</file>
+  </qresource>
+  <qresource prefix="background">
+    <file>filters_bg.png</file>
+  </qresource>
+</RCC>

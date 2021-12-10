@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="bg">
+    <file>signup.png</file>
+  </qresource>
+</RCC>
