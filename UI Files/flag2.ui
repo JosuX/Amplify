@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1147</width>
+    <height>1024</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QFrame" name="Background">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1147</width>
+     <height>1024</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">[objectName^=&quot;Background&quot;]
+{
+	background-image:url(:/static/background.png)
+}
+
+[objectName^=&quot;stepFrame&quot;]
+{
+	background-image:url(:/static/s2.png)
+}
+
+QPushButton
+{
+	background-color: none;
+	border:none;
+}
+
+QLineEdit
+{
+	background-color: rgb(242, 242, 242);
+    border:none;
+    font-size:20px;
+	color: rgb(79, 79, 79)
+}
+
+[objectName^=&quot;filename&quot;]
+{
+	font-size: 15px;
+}
+
+QComboBox
+{
+	border: none;
+	font-size: 19px;
+	padding-left: 15px;
+	background-color:rgba(255, 255, 255, 0);
+	icon-size: 20px
+}
+
+QComboBox::drop-down
+{
+	image: none;
+	border-radius: 10px;
+}
+
+QComboBox QAbstractItemView
+{
+	border-radius: 10px;
+	background-color: rgb(255, 255, 255);
+}
+</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QFrame" name="stepFrame">
+    <property name="geometry">
+     <rect>
+      <x>146</x>
+      <y>389</y>
+      <width>733</width>
+      <height>601</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLineEdit" name="location">
+     <property name="geometry">
+      <rect>
+       <x>66</x>
+       <y>198</y>
+       <width>605</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Nasty Street at Christmas Time!</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="next_but">
+     <property name="geometry">
+      <rect>
+       <x>590</x>
+       <y>530</y>
+       <width>122</width>
+       <height>52</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="back_but">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>530</y>
+       <width>122</width>
+       <height>52</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="choosefile">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>500</y>
+       <width>141</width>
+       <height>52</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="filename">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>510</y>
+       <width>101</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Filename.png</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="d_cat">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>350</y>
+       <width>281</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="editable">
+      <bool>false</bool>
+     </property>
+     <property name="currentText">
+      <string/>
+     </property>
+     <property name="insertPolicy">
+      <enum>QComboBox::NoInsert</enum>
+     </property>
+     <property name="frame">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="d_prio">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>350</y>
+       <width>281</width>
+       <height>41</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="gps">
+     <property name="geometry">
+      <rect>
+       <x>581</x>
+       <y>161</y>
+       <width>101</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="step1">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>300</y>
+      <width>200</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../Resources/flagging/fl_res.qrc">:/steps/s1_d.png</pixmap>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="step2">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>300</y>
+      <width>200</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../Resources/flagging/fl_res.qrc">:/steps/s2_a.png</pixmap>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="step3">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>300</y>
+      <width>200</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../Resources/flagging/fl_res.qrc">:/steps/s3_d.png</pixmap>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../Resources/flagging/fl_res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="backgrounds">
+    <file>alldone_bg.png</file>
+    <file>empty_bg.png</file>
+    <file>myflag_bg.png</file>
+  </qresource>
+</RCC>

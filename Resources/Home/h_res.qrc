@@ -1,0 +1,21 @@
+<RCC>
+  <qresource prefix="basis">
+    <file>card_sample.png</file>
+    <file>home_basis.png</file>
+  </qresource>
+  <qresource prefix="p_images">
+    <file>ci_1.png</file>
+    <file>ci_2.png</file>
+    <file>ci_3.png</file>
+  </qresource>
+  <qresource prefix="other">
+    <file>i_location.png</file>
+    <file>d_0.png</file>
+    <file>d_1.png</file>
+    <file>l_0.png</file>
+    <file>l_1.png</file>
+    <file>details.png</file>
+    <file>p_sample.png</file>
+    <file>header.png</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,1405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HomeWidget</class>
+ <widget class="QWidget" name="HomeWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1147</width>
+    <height>1024</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QScrollArea" name="Scrollable">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1147</width>
+     <height>1024</height>
+    </rect>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>0</number>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOn</enum>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAsNeeded</enum>
+   </property>
+   <property name="sizeAdjustPolicy">
+    <enum>QAbstractScrollArea::AdjustToContents</enum>
+   </property>
+   <property name="widgetResizable">
+    <bool>true</bool>
+   </property>
+   <widget class="QWidget" name="ScrollArea">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1124</width>
+      <height>2473</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget
+{
+	background-color: rgb(238, 240, 242)
+}
+
+[objectName^=&quot;card&quot;]
+{
+	color: white;
+	background-color: white;
+	border-radius: 30px;
+	border: none;
+}
+
+[objectName^=&quot;image&quot;]
+{
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+}
+
+[objectName^=&quot;topframe&quot;]
+{
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+}
+
+[objectName^=&quot;title&quot;]
+{
+	font-weight: bold;
+	font-size: 48px;
+	color:white;
+	background-color: none;
+	font-family: &quot;Arial&quot;;
+
+}
+
+[objectName^=&quot;icon_loc&quot;]
+{
+	background-color: none;
+}
+
+[objectName^=&quot;t_loc&quot;]
+{
+	background-color: none;
+	color: white;
+	font-weight:bold;
+	font-size: 17px;
+}
+
+QLabel
+{
+	background-color:none;
+}
+
+[objectName^=&quot;desc&quot;]
+{
+	color: black;
+	font-size: 20px
+}
+
+[objectName^=&quot;details&quot;]
+{
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+	background-image: url(:/other/details.png)
+}
+
+QRadioButton
+{
+	background-color: none;
+	font-size: 18px;
+}
+
+[objectName^=&quot;like&quot;]::indicator::checked
+{
+	image: url(:/other/l_0.png)
+}
+
+
+[objectName^=&quot;like&quot;]::indicator::unchecked
+{
+	image: url(:/other/l_1.png)
+}
+
+[objectName^=&quot;dislike&quot;]::indicator::checked
+{
+	image: url(:/other/d_0.png)
+}
+
+[objectName^=&quot;dislike&quot;]::indicator::unchecked
+{
+	image: url(:/other/d_1.png)
+}
+
+[objectName^=&quot;description&quot;]
+{
+	font-size:18px;
+	background-color: none;
+	font-weight: 300;
+	font-family: &quot;Open Sans&quot;;
+	color: rgb(138, 138, 138)
+}
+
+[objectName^=&quot;poster&quot;]
+{
+	font-size:18px;
+	background-color: none;
+	font-weight: 500;
+	font-style:italic;
+}
+
+[objectName^=&quot;posted&quot;]
+{
+	font-size:18px;
+	background-color: none;
+	font-weight: 500;
+	font-style:italic;
+}
+
+[objectName^=&quot;Header&quot;]
+{
+	background-image: url(:/other/header.png)
+}
+
+QPushButton
+{
+	background-color: none;
+	border: none;
+}</string>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <property name="spacing">
+      <number>30</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>25</number>
+     </property>
+     <item>
+      <widget class="QFrame" name="Header">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>153</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QPushButton" name="filter_button">
+        <property name="geometry">
+         <rect>
+          <x>1034</x>
+          <y>50</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="cl_button">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>121</y>
+          <width>151</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QFrame" name="sectionFrame">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>735</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QFrame" name="card">
+        <property name="geometry">
+         <rect>
+          <x>94</x>
+          <y>31</y>
+          <width>960</width>
+          <height>656</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Sunken</enum>
+        </property>
+        <property name="lineWidth">
+         <number>0</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QFrame" name="topframe">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>400</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QLabel" name="image">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>-1</y>
+              <width>960</width>
+              <height>401</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="textFormat">
+             <enum>Qt::AutoText</enum>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../Resources/Home/h_res.qrc">:/p_images/ci_1.png</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+            <property name="openExternalLinks">
+             <bool>false</bool>
+            </property>
+           </widget>
+           <widget class="QLabel" name="title">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>323</y>
+              <width>914</width>
+              <height>71</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Road Damage under Quiapo Bridge</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="icon_loc">
+            <property name="geometry">
+             <rect>
+              <x>723</x>
+              <y>20</y>
+              <width>30</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../Resources/Home/h_res.qrc">:/other/i_location.png</pixmap>
+            </property>
+           </widget>
+           <widget class="QLabel" name="t_loc">
+            <property name="geometry">
+             <rect>
+              <x>756</x>
+              <y>19</y>
+              <width>184</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Quiapo, Manila City</string>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="details">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QRadioButton" name="like">
+            <property name="geometry">
+             <rect>
+              <x>766</x>
+              <y>201</y>
+              <width>76</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>87</string>
+            </property>
+           </widget>
+           <widget class="QRadioButton" name="dislike">
+            <property name="geometry">
+             <rect>
+              <x>850</x>
+              <y>201</y>
+              <width>76</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>11</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="description">
+            <property name="geometry">
+             <rect>
+              <x>40</x>
+              <y>70</y>
+              <width>891</width>
+              <height>121</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="text">
+             <string>The road holes and damages are extremely dangerous for vehicle drivers especially for the motorcycle riders, which may lead to accident. It also causes traffic congestions and inconvenience to the Filipino motorists.
+Numerous orange barriers were scattered along Roxas Boulevard, which serves as warning device. Several roads in Pasay, Quezon City have also potholes.</string>
+            </property>
+            <property name="textFormat">
+             <enum>Qt::AutoText</enum>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+            <property name="margin">
+             <number>7</number>
+            </property>
+            <property name="indent">
+             <number>0</number>
+            </property>
+           </widget>
+           <widget class="QLabel" name="poster">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>200</y>
+              <width>261</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>-Michael R. Sacorum</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="posted">
+            <property name="geometry">
+             <rect>
+              <x>500</x>
+              <y>200</y>
+              <width>231</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>December 07, 2021</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="desc_status">
+            <property name="geometry">
+             <rect>
+              <x>520</x>
+              <y>30</y>
+              <width>91</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Hot</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="ico_status">
+            <property name="geometry">
+             <rect>
+              <x>480</x>
+              <y>30</y>
+              <width>30</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../Resources/Filter/filter_r.qrc">:/other/red.png</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>false</bool>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="ico_prio">
+            <property name="geometry">
+             <rect>
+              <x>620</x>
+              <y>30</y>
+              <width>30</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../Resources/Filter/filter_r.qrc">:/other/pink.png</pixmap>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="desc_prio">
+            <property name="geometry">
+             <rect>
+              <x>660</x>
+              <y>30</y>
+              <width>101</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Urgent</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="ico_cat">
+            <property name="geometry">
+             <rect>
+              <x>770</x>
+              <y>30</y>
+              <width>30</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../Resources/Filter/filter_r.qrc">:/other/blue.png</pixmap>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="desc_cat">
+            <property name="geometry">
+             <rect>
+              <x>810</x>
+              <y>30</y>
+              <width>131</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Land Issue</string>
+            </property>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLabel" name="dropshadow">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1147</width>
+          <height>735</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="../Resources/Home/h_res.qrc">:/basis/card_sample.png</pixmap>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <zorder>dropshadow</zorder>
+       <zorder>card</zorder>
+      </widget>
+     </item>
+     <item>
+      <widget class="QFrame" name="sectionFrame_2">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>735</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QFrame" name="card_3">
+        <property name="geometry">
+         <rect>
+          <x>94</x>
+          <y>31</y>
+          <width>960</width>
+          <height>656</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Sunken</enum>
+        </property>
+        <property name="lineWidth">
+         <number>0</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_4" stretch="0,0">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QFrame" name="topframe_3">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>400</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QLabel" name="image_3">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>-1</y>
+              <width>960</width>
+              <height>401</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="textFormat">
+             <enum>Qt::AutoText</enum>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../Resources/Home/h_res.qrc">:/p_images/ci_1.png</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+            <property name="openExternalLinks">
+             <bool>false</bool>
+            </property>
+           </widget>
+           <widget class="QLabel" name="title_3">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>323</y>
+              <width>914</width>
+              <height>71</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Leaning Power Lines near my House!</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="icon_loc_3">
+            <property name="geometry">
+             <rect>
+              <x>723</x>
+              <y>20</y>
+              <width>30</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../Resources/Home/h_res.qrc">:/other/i_location.png</pixmap>
+            </property>
+           </widget>
+           <widget class="QLabel" name="t_loc_3">
+            <property name="geometry">
+             <rect>
+              <x>756</x>
+              <y>19</y>
+              <width>184</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Malate, Manila City</string>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="details_3">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QRadioButton" name="like_3">
+            <property name="geometry">
+             <rect>
+              <x>766</x>
+              <y>201</y>
+              <width>76</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>148</string>
+            </property>
+           </widget>
+           <widget class="QRadioButton" name="dislike_3">
+            <property name="geometry">
+             <rect>
+              <x>850</x>
+              <y>201</y>
+              <width>76</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>5</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="description_3">
+            <property name="geometry">
+             <rect>
+              <x>40</x>
+              <y>70</y>
+              <width>891</width>
+              <height>121</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="text">
+             <string>This happened after the typhoon Ziya. We were totally terrified when the typhoon occurred. But it seems that our worries might be longer than we thought. Since it’s been 4 days, that no authorities had took action with these Power Lines!!!  Meralco! Please fix this immediately! Our lives are at stake!</string>
+            </property>
+            <property name="textFormat">
+             <enum>Qt::AutoText</enum>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+            <property name="margin">
+             <number>7</number>
+            </property>
+            <property name="indent">
+             <number>0</number>
+            </property>
+           </widget>
+           <widget class="QLabel" name="poster_3">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>200</y>
+              <width>261</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>-Jharobel May Sinyagas</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="posted_3">
+            <property name="geometry">
+             <rect>
+              <x>500</x>
+              <y>200</y>
+              <width>231</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>December 04, 2021</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="desc_status_3">
+            <property name="geometry">
+             <rect>
+              <x>520</x>
+              <y>30</y>
+              <width>91</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Hot</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="ico_status_3">
+            <property name="geometry">
+             <rect>
+              <x>480</x>
+              <y>30</y>
+              <width>30</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../Resources/Filter/filter_r.qrc">:/other/red.png</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>false</bool>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="ico_prio_3">
+            <property name="geometry">
+             <rect>
+              <x>620</x>
+              <y>30</y>
+              <width>30</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../Resources/Filter/filter_r.qrc">:/other/pink.png</pixmap>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="desc_prio_3">
+            <property name="geometry">
+             <rect>
+              <x>660</x>
+              <y>30</y>
+              <width>101</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Urgent</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="ico_cat_3">
+            <property name="geometry">
+             <rect>
+              <x>770</x>
+              <y>30</y>
+              <width>30</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../Resources/Filter/filter_r.qrc">:/other/blue.png</pixmap>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="desc_cat_3">
+            <property name="geometry">
+             <rect>
+              <x>810</x>
+              <y>30</y>
+              <width>131</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Electricity</string>
+            </property>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLabel" name="dropshadow_3">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1147</width>
+          <height>735</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="../Resources/Home/h_res.qrc">:/basis/card_sample.png</pixmap>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <zorder>dropshadow_3</zorder>
+       <zorder>card_3</zorder>
+      </widget>
+     </item>
+     <item>
+      <widget class="QFrame" name="sectionFrame_3">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>735</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QFrame" name="card_4">
+        <property name="geometry">
+         <rect>
+          <x>94</x>
+          <y>31</y>
+          <width>960</width>
+          <height>656</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Sunken</enum>
+        </property>
+        <property name="lineWidth">
+         <number>0</number>
+        </property>
+        <property name="midLineWidth">
+         <number>0</number>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_5" stretch="0,0">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QFrame" name="topframe_4">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>400</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QLabel" name="image_4">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>-1</y>
+              <width>960</width>
+              <height>401</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="textFormat">
+             <enum>Qt::AutoText</enum>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../Resources/Home/h_res.qrc">:/p_images/ci_1.png</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+            <property name="wordWrap">
+             <bool>false</bool>
+            </property>
+            <property name="openExternalLinks">
+             <bool>false</bool>
+            </property>
+           </widget>
+           <widget class="QLabel" name="title_4">
+            <property name="geometry">
+             <rect>
+              <x>20</x>
+              <y>323</y>
+              <width>914</width>
+              <height>71</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Nasty Streets at Christmas Time!</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="icon_loc_4">
+            <property name="geometry">
+             <rect>
+              <x>723</x>
+              <y>20</y>
+              <width>30</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../Resources/Home/h_res.qrc">:/other/i_location.png</pixmap>
+            </property>
+           </widget>
+           <widget class="QLabel" name="t_loc_4">
+            <property name="geometry">
+             <rect>
+              <x>756</x>
+              <y>19</y>
+              <width>184</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Divisoria, Manila City</string>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="details_4">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <widget class="QRadioButton" name="like_4">
+            <property name="geometry">
+             <rect>
+              <x>766</x>
+              <y>201</y>
+              <width>76</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>0</string>
+            </property>
+           </widget>
+           <widget class="QRadioButton" name="dislike_4">
+            <property name="geometry">
+             <rect>
+              <x>850</x>
+              <y>201</y>
+              <width>76</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>0</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="description_4">
+            <property name="geometry">
+             <rect>
+              <x>40</x>
+              <y>70</y>
+              <width>891</width>
+              <height>121</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="text">
+             <string>This is the fifth time that encounter such nasty streets in Divisoria. I came from the province of Tarlac City, and I always shop at Divisoria when I get a chance to travel at Manila, to buy my kids Christmas gifts since I could make a bargain here. Rather than, shopping at commercial malls.   Don’t you ever get bothered by these trashes on the street walk?!  Get a grip of yourselves people!</string>
+            </property>
+            <property name="textFormat">
+             <enum>Qt::AutoText</enum>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+            </property>
+            <property name="wordWrap">
+             <bool>true</bool>
+            </property>
+            <property name="margin">
+             <number>7</number>
+            </property>
+            <property name="indent">
+             <number>0</number>
+            </property>
+           </widget>
+           <widget class="QLabel" name="poster_4">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>200</y>
+              <width>261</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>-John Doe</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="posted_4">
+            <property name="geometry">
+             <rect>
+              <x>500</x>
+              <y>200</y>
+              <width>231</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>December 10, 2021</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="desc_status_4">
+            <property name="geometry">
+             <rect>
+              <x>520</x>
+              <y>30</y>
+              <width>91</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>New</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="ico_status_4">
+            <property name="geometry">
+             <rect>
+              <x>480</x>
+              <y>30</y>
+              <width>30</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../Resources/Filter/filter_r.qrc">:/other/red.png</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>false</bool>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="ico_prio_4">
+            <property name="geometry">
+             <rect>
+              <x>620</x>
+              <y>30</y>
+              <width>30</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../Resources/Filter/filter_r.qrc">:/other/pink.png</pixmap>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="desc_prio_4">
+            <property name="geometry">
+             <rect>
+              <x>660</x>
+              <y>30</y>
+              <width>101</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Urgent</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="ico_cat_4">
+            <property name="geometry">
+             <rect>
+              <x>770</x>
+              <y>30</y>
+              <width>30</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap resource="../Resources/Filter/filter_r.qrc">:/other/blue.png</pixmap>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QLabel" name="desc_cat_4">
+            <property name="geometry">
+             <rect>
+              <x>810</x>
+              <y>30</y>
+              <width>131</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Sanitation</string>
+            </property>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLabel" name="dropshadow_4">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1147</width>
+          <height>735</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="../Resources/Home/h_res.qrc">:/basis/card_sample.png</pixmap>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <zorder>dropshadow_4</zorder>
+       <zorder>card_4</zorder>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../Resources/Home/h_res.qrc"/>
+  <include location="../Resources/Filter/filter_r.qrc"/>
+ </resources>
+ <connections/>
+</ui>

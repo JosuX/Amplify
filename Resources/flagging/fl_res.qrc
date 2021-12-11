@@ -1,0 +1,16 @@
+<RCC>
+  <qresource prefix="static">
+    <file>background.png</file>
+    <file>s1.png</file>
+    <file>s2.png</file>
+    <file>s3.png</file>
+  </qresource>
+  <qresource prefix="steps">
+    <file>s3_d.png</file>
+    <file>s1_a.png</file>
+    <file>s1_d.png</file>
+    <file>s2_a.png</file>
+    <file>s2_d.png</file>
+    <file>s3_a.png</file>
+  </qresource>
+</RCC>

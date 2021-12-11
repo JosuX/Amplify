@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>293</width>
+    <height>1024</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="toolTip">
+   <string/>
+  </property>
+  <widget class="QFrame" name="Background">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>293</width>
+     <height>1024</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">[objectName^=&quot;Background&quot;]
+{
+	background-image: url(:/background/filters_bg.png)
+}
+
+QSlider:groove:horizontal
+{
+    height: 2px; 
+    background: rgb(52, 157, 254);
+}
+
+QSlider::handle:horizontal {
+    background:rgb(52, 157, 254);
+    width: 18px;
+    margin: -9px 0;
+    border-radius: 9px;
+}
+
+[objectName^=&quot;RadiusValue&quot;]
+{
+	font-size: 25px;
+	background-color: rgb(255, 255, 255);
+}
+
+QComboBox
+{
+	border: none;
+	font-size: 19px;
+	padding-left: 15px;
+	background-image: url(:/other/dropdown.png);
+	icon-size: 20px
+}
+
+QComboBox::drop-down
+{
+	image: none;
+	border-radius: 10px;
+}
+
+QComboBox QAbstractItemView
+{
+	border-radius: 10px;
+	background-color: rgb(255, 255, 255);
+}
+
+[objectName^=&quot;d_cat&quot;]
+{
+	font-size: 16px;
+}
+
+QPushButton
+{
+	background-color: none;
+	border:none;
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QSlider" name="RadiusSlider">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>245</y>
+      <width>210</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>21</number>
+    </property>
+    <property name="singleStep">
+     <number>1</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <property name="tickPosition">
+     <enum>QSlider::TicksAbove</enum>
+    </property>
+    <property name="tickInterval">
+     <number>5</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="RadiusValue">
+    <property name="geometry">
+     <rect>
+      <x>36</x>
+      <y>280</y>
+      <width>221</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string>0.5 km</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="d_cat">
+    <property name="geometry">
+     <rect>
+      <x>56</x>
+      <y>412</y>
+      <width>178</width>
+      <height>73</height>
+     </rect>
+    </property>
+    <property name="editable">
+     <bool>false</bool>
+    </property>
+    <property name="currentText">
+     <string/>
+    </property>
+    <property name="insertPolicy">
+     <enum>QComboBox::NoInsert</enum>
+    </property>
+    <property name="frame">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="d_prio">
+    <property name="geometry">
+     <rect>
+      <x>56</x>
+      <y>600</y>
+      <width>178</width>
+      <height>73</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="d_stat">
+    <property name="geometry">
+     <rect>
+      <x>56</x>
+      <y>787</y>
+      <width>178</width>
+      <height>73</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="apply">
+    <property name="geometry">
+     <rect>
+      <x>25</x>
+      <y>932</y>
+      <width>243</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="b_exit">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>80</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../Resources/Filter/filter_r.qrc"/>
+ </resources>
+ <connections/>
+</ui>

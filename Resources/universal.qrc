@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="eyes">
+    <file>visibility.png</file>
+    <file>visibility_off.png</file>
+  </qresource>
+  <qresource prefix="others">
+    <file>check.png</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1441</width>
+    <height>1024</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QFrame" name="Background">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>293</width>
+     <height>1024</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame
+{
+	image: url(:/background/sb.png)
+}
+
+[objectName^=&quot;b_H&quot;]::indicator::unchecked
+{
+	image: url(:/buttoninactive/H_0.png)
+}
+
+[objectName^=&quot;b_H&quot;]::indicator::unchecked::hover
+{
+	image: url(:/buttonhover/H_1.png)
+}
+
+[objectName^=&quot;b_H&quot;]::indicator::checked
+{
+	image: url(:/buttonactive/H_2.png)
+}
+
+[objectName^=&quot;b_R&quot;]::indicator::unchecked
+{
+	image:  url(:/buttoninactive/R_0.png)
+}
+
+[objectName^=&quot;b_R&quot;]::indicator::unchecked::hover
+{
+	image:  url(:/buttonhover/R_1.png)
+}
+
+[objectName^=&quot;b_R&quot;]::indicator::checked
+{
+	image: url(:/buttonactive/R_2.png)
+}
+
+
+[objectName^=&quot;b_F&quot;]::indicator::unchecked
+{
+	image:  url(:/buttoninactive/F_0.png)
+}
+
+[objectName^=&quot;b_F&quot;]::indicator::unchecked::hover
+{
+	image:  url(:/buttonhover/F_1.png)
+}
+
+[objectName^=&quot;b_F&quot;]::indicator::checked
+{
+	image: url(:/buttonactive/F_2.png)
+}
+
+</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QRadioButton" name="b_H">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>280</y>
+      <width>201</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="b_R">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>400</y>
+      <width>201</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="b_F">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>520</y>
+      <width>201</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="sec_frame">
+   <property name="geometry">
+    <rect>
+     <x>293</x>
+     <y>0</y>
+     <width>1167</width>
+     <height>1044</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout"/>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../Resources/sidebar/side.qrc"/>
+ </resources>
+ <connections/>
+</ui>

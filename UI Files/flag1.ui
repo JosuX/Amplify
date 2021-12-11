@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1147</width>
+    <height>1024</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QFrame" name="Background">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1147</width>
+     <height>1024</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">[objectName^=&quot;Background&quot;]
+{
+	background-image:url(:/static/background.png)
+}
+
+[objectName^=&quot;stepFrame&quot;]
+{
+	background-image:url(:/static/s1.png)
+}
+
+QPushButton
+{
+	background-color: none;
+	border:none;
+}
+
+QPlainTextEdit
+{
+	background-color: rgb(242, 242, 242);
+    border:none;
+    font-size:19px;
+	color: rgb(79, 79, 79)
+}
+
+QLineEdit
+{
+	background-color: rgb(242, 242, 242);
+    border:none;
+    font-size:20px;
+	color: rgb(79, 79, 79)
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QFrame" name="stepFrame">
+    <property name="geometry">
+     <rect>
+      <x>146</x>
+      <y>389</y>
+      <width>733</width>
+      <height>601</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLineEdit" name="title">
+     <property name="geometry">
+      <rect>
+       <x>66</x>
+       <y>198</y>
+       <width>605</width>
+       <height>35</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Nasty Street at Christmas Time!</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="next_but">
+     <property name="geometry">
+      <rect>
+       <x>586</x>
+       <y>511</y>
+       <width>122</width>
+       <height>52</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPlainTextEdit" name="desc">
+     <property name="geometry">
+      <rect>
+       <x>66</x>
+       <y>330</y>
+       <width>605</width>
+       <height>131</height>
+      </rect>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="plainText">
+      <string>This is the fifth time that encounter such nasty streets in Divisoria. I came from the province of Tarlac City, and I always shop at Divisoria when I get a chance to travel at Manila, to buy my kids Christmas gifts since I could make a bargain here. Rather than, shopping at commercial malls. Don’t you ever get bothered by these trashes on...</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="step1">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>300</y>
+      <width>200</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../Resources/flagging/fl_res.qrc">:/steps/s1_a.png</pixmap>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="step2">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>300</y>
+      <width>200</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../Resources/flagging/fl_res.qrc">:/steps/s2_d.png</pixmap>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="step3">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>300</y>
+      <width>200</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="../Resources/flagging/fl_res.qrc">:/steps/s3_d.png</pixmap>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../Resources/flagging/fl_res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
